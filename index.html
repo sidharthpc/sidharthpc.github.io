@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Professional Portfolio</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --accent: #38bdf8;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
+    body { background-color: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
+    .container { max-width: 800px; margin: 0 auto; }
+    
+    header { text-align: center; margin-bottom: 3rem; }
+    header h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    header p { color: var(--accent); font-size: 1.2rem; font-weight: 500; }
+    
+    .card { background: var(--card-bg); padding: 1.5rem; border-radius: 12px; margin-bottom: 1.5rem; border: 1px solid #334155; }
+    .card h2 { color: var(--accent); margin-bottom: 0.8rem; border-bottom: 1px solid #334155; padding-bottom: 0.4rem; }
+    
+    .skills-list { display: flex; flex-wrap: wrap; gap: 0.5rem; list-style: none; }
+    .skills-list li { background: #334155; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.9rem; }
+    
+    .links { display: flex; justify-content: center; gap: 1rem; margin-top: 1.5rem; }
+    .btn { background: var(--accent); color: var(--bg); padding: 0.6rem 1.2rem; border-radius: 6px; text-decoration: none; font-weight: bold; transition: opacity 0.2s; }
+    .btn:hover { opacity: 0.9; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Your Name</h1>
+      <p>Specialist Title / Role</p>
+    </header>
+
+    <div class="card">
+      <h2>About Me</h2>
+      <p>Brief professional summary highlighting your background, key expertise, and career goals.</p>
+    </div>
+
+    <div class="card">
+      <h2>Core Skills</h2>
+      <ul class="skills-list">
+        <li>Skill 1</li>
+        <li>Skill 2</li>
+        <li>Skill 3</li>
+        <li>Skill 4</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Experience / Projects</h2>
+      <p><strong>Project Title</strong> — Short description of what you built or accomplished.</p>
+    </div>
+
+    <div class="links">
+      <a href="mailto:your.email@example.com" class="btn">Email Me</a>
+      <a href="https://linkedin.com" target="_blank" class="btn">LinkedIn</a>
+    </div>
+  </div>
+</body>
+</html>
