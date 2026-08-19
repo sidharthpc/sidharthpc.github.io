@@ -18,20 +18,21 @@
     body { background-color: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
     .container { max-width: 900px; margin: 0 auto; }
     
-    header { text-align: center; margin-bottom: 3rem; }
+    header { text-align: center; margin-bottom: 2.5rem; }
     header h1 { font-size: 2.4rem; margin-bottom: 0.3rem; }
-    header .subtitle { color: var(--accent); font-size: 1.15rem; font-weight: 600; margin-bottom: 0.5rem; }
+    header .subtitle { color: var(--accent); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem; }
     header .location { color: var(--text-muted); font-size: 0.95rem; }
     
     .card { background: var(--card-bg); padding: 1.8rem; border-radius: 12px; margin-bottom: 1.8rem; border: 1px solid var(--border); }
-    .card h2 { color: var(--accent); margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; font-size: 1.4rem; }
+    .card h2 { color: var(--accent); margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; font-size: 1.35rem; text-transform: uppercase; letter-spacing: 0.5px; }
+    .card h3 { color: #f1f5f9; margin: 1.2rem 0 0.6rem 0; font-size: 1.1rem; border-bottom: 1px dashed var(--border); padding-bottom: 0.3rem; }
     
     .skills-category { margin-bottom: 1rem; }
     .skills-category strong { display: block; margin-bottom: 0.4rem; color: #e2e8f0; }
-    .skills-list { display: flex; flex-wrap: wrap; gap: 0.5rem; list-style: none; margin-bottom: 1rem; }
+    .skills-list { display: flex; flex-wrap: wrap; gap: 0.5rem; list-style: none; margin-bottom: 0.8rem; }
     .skills-list li { background: #334155; padding: 0.35rem 0.8rem; border-radius: 16px; font-size: 0.88rem; color: #f1f5f9; }
     
-    .exp-item, .pub-item, .edu-item { margin-bottom: 1.4rem; }
+    .exp-item, .pub-item, .edu-item { margin-bottom: 1.2rem; }
     .exp-item:last-child, .pub-item:last-child, .edu-item:last-child { margin-bottom: 0; }
     .item-header { display: flex; justify-content: space-between; flex-wrap: wrap; margin-bottom: 0.3rem; }
     .item-title { font-weight: bold; font-size: 1.05rem; color: #f1f5f9; }
@@ -41,22 +42,23 @@
     ul.bullet-list { margin-left: 1.2rem; }
     ul.bullet-list li { margin-bottom: 0.4rem; font-size: 0.95rem; color: #cbd5e1; }
     
+    .pub-item { font-size: 0.93rem; color: #cbd5e1; padding-left: 1rem; border-left: 2px solid var(--accent); margin-bottom: 1rem; }
     .pub-title { font-weight: 600; color: #f1f5f9; }
     .pub-venue { font-style: italic; color: var(--text-muted); }
-    .pub-link { color: var(--accent); text-decoration: none; font-size: 0.88rem; }
+    .pub-link { color: var(--accent); text-decoration: none; font-size: 0.85rem; word-break: break-all; }
     .pub-link:hover { text-decoration: underline; }
     
     .badge { display: inline-block; background: #0284c7; color: white; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.75rem; margin-left: 0.4rem; text-transform: uppercase; }
     
-    .links { display: flex; justify-content: center; flex-wrap: wrap; gap: 1rem; margin-top: 2rem; }
-    .btn { background: var(--accent); color: var(--bg); padding: 0.6rem 1.2rem; border-radius: 6px; text-decoration: none; font-weight: bold; transition: background 0.2s; }
+    .links { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.5rem; }
+    .btn { background: var(--accent); color: var(--bg); padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9rem; transition: background 0.2s; }
     .btn:hover { background: var(--accent-hover); }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>SIDHARTH PUNNACHALIL, PhD</h1>
+      <h1>DR. SIDHARTH PUNNACHALIL</h1>
       <p class="subtitle">FEM Specialist | Nonlinear FEA, Fracture & Fatigue | Structural Mechanics & Multiphysics Simulation</p>
       <p class="location">Kozhikode, Kerala, India (Open to relocation) | +91 8075633061 | sidharthpccalicut@gmail.com</p>
       <div class="links">
@@ -67,8 +69,17 @@
       </div>
     </header>
 
+    <!-- PROFESSIONAL SUMMARY -->
     <div class="card">
-      <h2>CORE SKILLS</h2>
+      <h2>Professional Summary</h2>
+      <p style="color: #cbd5e1; font-size: 0.98rem; line-height: 1.6;">
+        Structural analysis engineer with a PhD in computational mechanics and 5+ years running nonlinear finite element analyses to characterize fracture, fatigue, and thermo-mechanical structural behavior. Extensive hands-on experience in Abaqus and FEniCSx for nonlinear structural problems, including crack propagation, damage evolution, and coupled thermo-mechanical loading. Experienced in multiphysics modeling and simulation, coupling structural, thermal, and transport phenomena to solve complex nonlinear engineering problems, and held every model to a strict validation standard against analytical and experimental benchmarks. Strong background in solid mechanics, structural mechanics, fracture, fatigue, and material behavior, with experience presenting technical findings to specialist and cross-disciplinary audiences.
+      </p>
+    </div>
+
+    <!-- CORE SKILLS -->
+    <div class="card">
+      <h2>Core Skills</h2>
       
       <div class="skills-category">
         <strong>Structural & Fracture Analysis:</strong>
@@ -90,10 +101,20 @@
           <li>Python</li><li>MATLAB</li><li>C++</li><li>Abaqus UEL (FORTRAN)</li><li>Bash</li><li>Custom In-house FE Codes</li><li>AutoCAD</li><li>SolidWorks</li>
         </ul>
       </div>
+
+      <div class="skills-category">
+        <strong>Languages:</strong>
+        <ul class="skills-list">
+          <li>English (Bilingual / Professional)</li>
+          <li>German (B1 / Basic)</li>
+          <li>Malayalam (Native)</li>
+        </ul>
+      </div>
     </div>
 
+    <!-- RESEARCH EXPERIENCE -->
     <div class="card">
-      <h2>RESEARCH EXPERIENCE</h2>
+      <h2>Research Experience</h2>
 
       <div class="exp-item">
         <div class="item-header">
@@ -102,10 +123,10 @@
         </div>
         <div class="item-sub">Institute of Mechanics and Computational Mechanics (IBNM), Leibniz University Hannover, Germany</div>
         <ul class="bullet-list">
-          <li>Developed a fully coupled mechanical-electrochemical-fluid flow model of a multi-layer proton exchange membrane water electrolyzer cell, establishing how clamping pressure reshapes the internal pore structure.</li>
-          <li>Quantified how clamping pressure trades off electrical performance against fluid flow within the cell, validating against experimental polarization data to identify 5–8% compression as the practical design range.</li>
-          <li>Extended the coupled multiphysics model to a non-isothermal formulation incorporating localized Joule heating, capturing evaporation/condensation effects at high current densities.</li>
-          <li>Linked catalyst-layer fracture and degradation to mechanical compression and electrochemical activity, setting practical compression limits for cell lifetime.</li>
+          <li>Developed a comprehensive multi-physics modeling framework coupling solid/fracture mechanics and multiphase transport to evaluate the impact of mechanical compression and fluid flow in multi-layer PEM water electrolyzers.</li>
+          <li>Quantified how clamping pressure trades off electrical performance against fluid flow within the cell, validating against experimental polarization data to identify 5–8% compression as the practical range.</li>
+          <li>Implemented an advanced phase-field fracture model in FEniCSx to simulate structural degradation and cracking within the catalyst layer under partially saturated operating conditions.</li>
+          <li>Extended the coupled multiphysics model to a non-isothermal formulation by incorporating localized Joule heating, capturing evaporation/condensation effects at high current densities.</li>
         </ul>
       </div>
 
@@ -116,9 +137,9 @@
         </div>
         <div class="item-sub">Indian Institute of Technology Madras, Dept. of Structural Engineering, Chennai, India</div>
         <ul class="bullet-list">
-          <li>Formulated an algorithm with custom exponential finite element shape functions enabling accurate simulation of curved crack paths with a 20–30% accuracy improvement on coarse elements.</li>
-          <li>Extended formulation to Functionally Graded Materials (FGMs) for phase-field fracture simulations, matching the accuracy of a mesh with 80% more elements with no added computation time.</li>
-          <li>Deployed the formulation as a custom Abaqus user-element subroutine (UEL) for orthotropic, fiber-reinforced materials, cutting peak-load errors by 4.43% with just 2% added computation time.</li>
+          <li>Extended the Exponential Finite Element (EFE) framework within phase-field fracture models by developing a dynamic orientation scheme that automatically adjusts shape functions to track curved crack trajectories.</li>
+          <li>Modeled advanced material systems including Functionally Graded Materials (FGMs) and orthotropic FGMs, matching the accuracy of a mesh with 80% more elements while adding virtually no extra computation time.</li>
+          <li>Deployed custom Abaqus user-element subroutines (UEL) for orthotropic, fiber-reinforced materials, predicting crack paths as accurately as advanced XFEM methods while cutting peak-load errors by 4.43%.</li>
         </ul>
       </div>
 
@@ -130,63 +151,27 @@
         <div class="item-sub">National Institute of Technology Karnataka, Surathkal, India</div>
         <ul class="bullet-list">
           <li>Analysed thermal buckling and vibration-mode behaviour of FGM plates using FE models and predicted peak loads accurately.</li>
-          <li>Validated buckling predictions against generalized shear-deformation theory solutions, establishing model reliability.</li>
+          <li>Validated buckling predictions against generalized shear-deformation theory solutions to establish model reliability.</li>
         </ul>
       </div>
     </div>
 
+    <!-- EDUCATION -->
     <div class="card">
-      <h2>PUBLICATIONS</h2>
-      
-      <div class="pub-item">
-        <div class="pub-title">Phase-field modeling of brittle fracture in functionally graded materials using exponential finite elements</div>
-        <div class="pub-venue">Sidharth, P.C. & Rao, B.N. (2023). <em>Engineering Fracture Mechanics</em>, 291: 109576.</div>
-        <a href="https://doi.org/10.1016/j.engfracmech.2023.109576" target="_blank" class="pub-link">DOI: 10.1016/j.engfracmech.2023.109576</a>
-      </div>
-
-      <div class="pub-item">
-        <div class="pub-title">Phase-field modeling of brittle fracture using automatically oriented exponential finite elements</div>
-        <div class="pub-venue">Sidharth, P.C. & Rao, B.N. (2023). <em>International Journal of Fracture</em>, 242(2): 169-189.</div>
-        <a href="https://doi.org/10.1007/s10704-023-00708-9" target="_blank" class="pub-link">DOI: 10.1007/s10704-023-00708-9</a>
-      </div>
-
-      <div class="pub-item">
-        <div class="pub-title">Mixed-mode fracture in orthotropic FGMs: A phase-field approach with exponential finite elements</div>
-        <div class="pub-venue">Sidharth, P.C. & Rao, B.N. (2025). <em>Acta Mechanica Solida Sinica</em>.</div>
-        <a href="https://doi.org/10.1007/s10338-025-00641-5" target="_blank" class="pub-link">DOI: 10.1007/s10338-025-00641-5</a>
-      </div>
-
-      <div class="pub-item">
-        <div class="pub-title">Optimizing integration point density for exponential finite element shape functions for phase-field modeling of fracture in functionally graded materials</div>
-        <div class="pub-venue">Sidharth, P.C. & Rao, B.N. (2024). <em>International Journal for Computational Methods in Engineering Science and Mechanics</em>, 1-14.</div>
-        <a href="https://doi.org/10.1080/15502287.2024.2345121" target="_blank" class="pub-link">DOI: 10.1080/15502287.2024.2345121</a>
-      </div>
-
-      <div class="pub-item">
-        <div class="pub-title">Multiphase transport interactions across multilayer proton exchange membrane water electrolyzers <span class="badge">In Review</span></div>
-        <div class="pub-venue">Sidharth, P.C., Antonini, A., Heider, Y., Xotta, G., Salomoni, V., Rao, B.N., & Aldakheel, F. (2026). <em>International Journal of Hydrogen Energy</em>.</div>
-      </div>
-
-      <div class="pub-item">
-        <div class="pub-title">A phase field method based fracture analysis of functionally graded plates</div>
-        <div class="pub-venue">Sidharth, P.C. & Rao, B.N. (2023). <em>ASME 2023 Pressure Vessels and Piping Conference (PVP2023)</em>.</div>
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>EDUCATION</h2>
+      <h2>Education</h2>
       
       <div class="edu-item">
         <div class="item-header">
-          <span class="item-title">PhD, Computational Mechanics (Civil Engineering)</span>
+          <span class="item-title">PhD in Civil Engineering (Computational Mechanics)</span>
           <span class="item-date">2020 – 2026</span>
         </div>
         <div class="item-sub">Indian Institute of Technology Madras, India — CGPA 9/10</div>
+        <p style="font-size: 0.88rem; color: var(--text-muted); margin-top: -0.3rem;">DAAD Bi-Nationally Supervised Doctoral Scholar, Leibniz University Hannover, Germany (2024–2026)</p>
       </div>
 
       <div class="edu-item">
         <div class="item-header">
-          <span class="item-title">Master of Technology, Structural Engineering</span>
+          <span class="item-title">Master of Technology in Structural Engineering</span>
           <span class="item-date">2017 – 2019</span>
         </div>
         <div class="item-sub">National Institute of Technology Karnataka, India — CGPA 8.3/10</div>
@@ -194,20 +179,153 @@
 
       <div class="edu-item">
         <div class="item-header">
-          <span class="item-title">Bachelor of Technology, Civil Engineering</span>
+          <span class="item-title">Bachelor of Technology in Civil Engineering</span>
           <span class="item-date">2012 – 2016</span>
         </div>
         <div class="item-sub">Government College of Engineering Kannur, India — First Class (71%)</div>
       </div>
     </div>
 
+    <!-- AWARDS -->
     <div class="card">
-      <h2>AWARDS & RECOGNITIONS</h2>
+      <h2>Awards & Recognitions</h2>
       <ul class="bullet-list">
-        <li><strong>DAAD Bi-Nationally Supervised Doctoral Degrees Scholarship</strong> to pursue research in Germany (2024)</li>
         <li><strong>Institute Research Award</strong> for outstanding PhD work, Indian Institute of Technology Madras (2025)</li>
-        <li><strong>2nd Runner-up</strong>, ASME Pressure Vessels and Piping Student Paper Competition, Atlanta, USA (2023)</li>
+        <li><strong>DAAD Bi-Nationally Supervised Doctoral Degrees Scholarship</strong> (€1,300/month), German Academic Exchange Service (2024–2026)</li>
+        <li><strong>2nd Runner-up Prize</strong>, ASME Pressure Vessels and Piping Student Paper Competition, Atlanta, USA (2023)</li>
+        <li><strong>Half-Time Research Assistantship (HTRA)</strong>, Ministry of Human Resources Development, Government of India (2020–2024)</li>
       </ul>
+    </div>
+
+    <!-- PUBLICATIONS -->
+    <div class="card">
+      <h2>Publications</h2>
+
+      <h3>A. Peer-reviewed Scientific Articles — Journal Articles</h3>
+      
+      <div class="pub-item">
+        <div class="pub-title">1. An investigation on optimized exponential finite element shape functions in phase-field modeling of fracture</div>
+        <div class="pub-venue">Sidharth, P.C., and Rao, B.N. (2025). <em>International Journal for Computational Methods in Engineering Science and Mechanics</em>, 1–17.</div>
+        <a href="https://doi.org/10.1080/15502287.2025.2586281" target="_blank" class="pub-link">https://doi.org/10.1080/15502287.2025.2586281</a>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">2. Mixed-mode fracture in orthotropic FGMs: A phase-field approach with exponential finite elements</div>
+        <div class="pub-venue">Sidharth, P.C., and Rao, B.N. (2025). <em>Acta Mechanica Solida Sinica</em>.</div>
+        <a href="https://doi.org/10.1007/s10338-025-00641-5" target="_blank" class="pub-link">https://doi.org/10.1007/s10338-025-00641-5</a>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">3. Optimizing integration point density for exponential finite element shape functions for phase-field modeling of fracture in functionally graded materials</div>
+        <div class="pub-venue">Sidharth, P.C., and Rao, B.N. (2024). <em>International Journal for Computational Methods in Engineering Science and Mechanics</em>, 25(5), 321–334.</div>
+        <a href="https://doi.org/10.1080/15502287.2024.2345121" target="_blank" class="pub-link">https://doi.org/10.1080/15502287.2024.2345121</a>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">4. Phase-field modeling of brittle fracture in functionally graded materials using exponential finite elements</div>
+        <div class="pub-venue">Sidharth, P.C., and Rao, B.N. (2023). <em>Engineering Fracture Mechanics</em>, 291: 109576.</div>
+        <a href="https://doi.org/10.1016/j.engfracmech.2023.109576" target="_blank" class="pub-link">https://doi.org/10.1016/j.engfracmech.2023.109576</a>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">5. Phase-field modeling of brittle fracture using automatically oriented exponential finite elements</div>
+        <div class="pub-venue">Sidharth, P.C., and Rao, B.N. (2023). <em>International Journal of Fracture</em>, 242(2), 169–189.</div>
+        <a href="https://doi.org/10.1007/s10704-023-00708-9" target="_blank" class="pub-link">https://doi.org/10.1007/s10704-023-00708-9</a>
+      </div>
+
+      <h3>Conference Proceedings Papers</h3>
+
+      <div class="pub-item">
+        <div class="pub-title">6. An open-source MOOSE implementation of phase-field modeling of fracture in functionally graded materials</div>
+        <div class="pub-venue">Sidharth, P.C., and Rao, B.N. (2024). <em>Procedia Structural Integrity</em>, 58, 115–121.</div>
+        <a href="https://doi.org/10.1016/j.prostr.2024.05.019" target="_blank" class="pub-link">https://doi.org/10.1016/j.prostr.2024.05.019</a>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">7. A phase field method based fracture analysis of functionally graded plates</div>
+        <div class="pub-venue">Sidharth, P.C., and Rao, B.N. (2023). <em>Volume 2: Computer Technology and Bolted Joints; Design and Analysis</em>. ASME.</div>
+        <a href="https://doi.org/10.1115/PVP2023-106859" target="_blank" class="pub-link">https://doi.org/10.1115/PVP2023-106859</a>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">8. A phase field approach to fracture mechanics problems</div>
+        <div class="pub-venue">Sidharth, P.C., and Rao, B.N. (2023). <em>Volume 2: Computer Technology and Bolted Joints; Design and Analysis</em>. ASME.</div>
+        <a href="https://doi.org/10.1115/PVP2023-106981" target="_blank" class="pub-link">https://doi.org/10.1115/PVP2023-106981</a>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">9. A review on phase-field modeling of fracture</div>
+        <div class="pub-venue">Sidharth, P.C., and Rao, B.N. (2022). <em>ASPS Conference Proceedings</em>, 1(1), 449–456.</div>
+        <a href="https://doi.org/10.38208/acp.v1.534" target="_blank" class="pub-link">https://doi.org/10.38208/acp.v1.534</a>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">10. A comparative study of recent phase-field implementations for fracture prediction in solids</div>
+        <div class="pub-venue">Sidharth, P.C., and Rao, B.N. (2022). <em>Aerospace and Associated Technology</em>, 551–557.</div>
+        <a href="https://doi.org/10.1201/9781003324539-101" target="_blank" class="pub-link">https://doi.org/10.1201/9781003324539-101</a>
+      </div>
+
+      <h3>Book Chapters</h3>
+
+      <div class="pub-item">
+        <div class="pub-title">11. A review on phase-field models applied to fracture in solids</div>
+        <div class="pub-venue">Sidharth, P.C., and Rao, B.N. (2022). In <em>Recent Advances in Applied Mechanics</em> (pp. 33–56). Springer.</div>
+        <a href="https://doi.org/10.1007/978-981-16-9539-1_3" target="_blank" class="pub-link">https://doi.org/10.1007/978-981-16-9539-1_3</a>
+      </div>
+
+      <h3>B. Non-refereed Scientific Presentations</h3>
+
+      <div class="pub-item">
+        <div class="pub-title">12. Electro-Chemo-Hydro-Mechanical Modeling of PEMWE Anode Catalyst Layers: The Role of Phase Change in Partially Saturated Porous Media</div>
+        <div class="pub-venue">Sidharth, P.C., Antonini, A., Heider, Y., Rao, B.N., & Aldakheel, F. 96th GAMM Meeting, University of Stuttgart, 16–20 March 2026.</div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">13. Modeling Fracture Propagation in the Catalyst Layer of PEM Water Electrolyzers Using a TPM-PFM Multiphysics Framework</div>
+        <div class="pub-venue">Sidharth, P.C., Antonini, A., Heider, Y., Rao, B.N., & Aldakheel, F. 11th GACM Colloquium, TU Braunschweig, 21–24 Sept 2025.</div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">14. A systematic investigation on optimized EFE shape functions in phase-field modeling of fracture</div>
+        <div class="pub-venue">Sidharth, P.C., & Rao, B.N. 6th INCAM 2024, NIT Warangal, 12–14 July 2024.</div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">15. An Open-Source Phase Field Model for Fracture in Orthotropic FGM With Adaptive Mesh Refinement</div>
+        <div class="pub-venue">Sidharth, P.C., & Rao, B.N. 9th ECCOMAS 2024, Lisboa, Portugal, 3–7 June 2024.</div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">16. An adaptive quadrature scheme-based phase-field study of crack-propagation and branching</div>
+        <div class="pub-venue">Sidharth, P.C., & Rao, B.N. 9th ICCMS, IIT Gandhinagar, 20–22 Dec 2023.</div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">17. An open-source MOOSE implementation of phase-field modeling of fracture in functionally graded materials</div>
+        <div class="pub-venue">Sidharth, P.C., & Rao, B.N. 7th ICSID, Dubrovnik, Croatia, 19–22 Sept 2023.</div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">18. An efficient phase-field model for fracture analysis of functionally graded plates</div>
+        <div class="pub-venue">Sidharth, P.C., & Rao, B.N. 3rd ICONS 2023, Mamallapuram, India, 23–25 Aug 2023.</div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">19. An efficient phase field implementation of fracture analysis of functionally graded materials</div>
+        <div class="pub-venue">Sidharth, P.C., & Rao, B.N. 7th CFRAC, Czech Technical University in Prague, 21–23 June 2023.</div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-title">20. Phase Field Modeling for Fracture Mechanics Applications</div>
+        <div class="pub-venue">Sidharth, P.C., & Rao, B.N. 17th VETOMAC, Institute of Engineering, Nepal, 15–17 Dec 2022.</div>
+      </div>
+
+      <h3>C. Manuscripts Currently Under Review</h3>
+
+      <div class="pub-item">
+        <div class="pub-title">21. Multiphase transport interactions across multilayer proton exchange membrane water electrolyzers <span class="badge">Under Review</span></div>
+        <div class="pub-venue">Sidharth, P.C., Antonini, A., Heider, Y., Xotta, G., Salomoni, V., Rao, B.N., & Aldakheel, F. (2026). <em>International Journal of Hydrogen Energy</em>.</div>
+      </div>
     </div>
   </div>
 </body>
