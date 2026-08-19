@@ -18,20 +18,33 @@
     body { background-color: var(--bg); color: var(--text); line-height: 1.6; padding: 2rem 1rem; }
     .container { max-width: 900px; margin: 0 auto; }
     
-    header { text-align: center; margin-bottom: 2.5rem; }
+    /* HEADER LAYOUT: Flexbox with text left & image right */
+    header { 
+      display: flex; 
+      align-items: center; 
+      justify-content: space-between; 
+      gap: 2rem; 
+      margin-bottom: 2.5rem; 
+    }
+    .header-content { flex: 1; text-align: left; }
     .profile-img {
       width: 160px;
       height: 160px;
-      border-radius: 50%;
+      border-radius: 20px; /* Curved square crop */
       object-fit: cover;
       border: 3px solid var(--accent);
-      margin-bottom: 1.2rem;
+      flex-shrink: 0;
       box-shadow: 0 4px 14px rgba(56, 189, 248, 0.25);
     }
-    header h1 { font-size: 2.4rem; margin-bottom: 0.3rem; }
-    header .subtitle { color: var(--accent); font-size: 1.1rem; font-weight: 600; margin-bottom: 0.5rem; }
-    header .location { color: var(--text-muted); font-size: 0.95rem; }
     
+    header h1 { font-size: 2.2rem; margin-bottom: 0.3rem; }
+    header .subtitle { color: var(--accent); font-size: 1.05rem; font-weight: 600; margin-bottom: 0.5rem; }
+    header .location { color: var(--text-muted); font-size: 0.9rem; }
+    
+    .links { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.2rem; }
+    .btn { background: var(--accent); color: var(--bg); padding: 0.45rem 0.9rem; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.85rem; transition: background 0.2s; }
+    .btn:hover { background: var(--accent-hover); }
+
     .card { background: var(--card-bg); padding: 1.8rem; border-radius: 12px; margin-bottom: 1.8rem; border: 1px solid var(--border); }
     .card h2 { color: var(--accent); margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; font-size: 1.35rem; text-transform: uppercase; letter-spacing: 0.5px; }
     .card h3 { color: #f1f5f9; margin: 1.2rem 0 0.6rem 0; font-size: 1.1rem; border-bottom: 1px dashed var(--border); padding-bottom: 0.3rem; }
@@ -58,27 +71,32 @@
     .pub-link:hover { text-decoration: underline; }
     
     .badge { display: inline-block; background: #0284c7; color: white; padding: 0.15rem 0.5rem; border-radius: 4px; font-size: 0.75rem; margin-left: 0.4rem; text-transform: uppercase; }
-    
-    .links { display: flex; justify-content: center; flex-wrap: wrap; gap: 0.8rem; margin-top: 1.5rem; }
-    .btn { background: var(--accent); color: var(--bg); padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 0.9rem; transition: background 0.2s; }
-    .btn:hover { background: var(--accent-hover); }
+
+    /* Responsive adjustment for small screens */
+    @media (max-width: 650px) {
+      header { flex-direction: column-reverse; text-align: center; }
+      .header-content { text-align: center; }
+      .links { justify-content: center; }
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <!-- PROFILE PHOTO -->
-      <img src="profile.png" alt="Dr. Sidharth Punnachalil" class="profile-img" />
-      
-      <h1>DR. SIDHARTH PUNNACHALIL</h1>
-      <p class="subtitle">FEM Specialist | Nonlinear FEA, Fracture & Fatigue | Structural Mechanics & Multiphysics Simulation</p>
-      <p class="location">Kozhikode, Kerala, India (Open to relocation) | +91 8075633061 | sidharthpccalicut@gmail.com</p>
-      <div class="links">
-        <a href="mailto:sidharthpccalicut@gmail.com" class="btn">Email Me</a>
-        <a href="https://linkedin.com/in/sidharth-pc" target="_blank" class="btn">LinkedIn</a>
-        <a href="https://scholar.google.com/citations?user=QtZZAygAAAAJ" target="_blank" class="btn">Google Scholar</a>
-        <a href="https://www.researchgate.net/profile/Sidharth_Pc2" target="_blank" class="btn">ResearchGate</a>
+      <div class="header-content">
+        <h1>DR. SIDHARTH PUNNACHALIL</h1>
+        <p class="subtitle">FEM Specialist | Nonlinear FEA, Fracture & Fatigue | Structural Mechanics & Multiphysics Simulation</p>
+        <p class="location">Kozhikode, Kerala, India (Open to relocation) | +91 8075633061 | sidharthpccalicut@gmail.com</p>
+        <div class="links">
+          <a href="mailto:sidharthpccalicut@gmail.com" class="btn">Email Me</a>
+          <a href="https://linkedin.com/in/sidharth-pc" target="_blank" class="btn">LinkedIn</a>
+          <a href="https://scholar.google.com/citations?user=QtZZAygAAAAJ" target="_blank" class="btn">Google Scholar</a>
+          <a href="https://www.researchgate.net/profile/Sidharth_Pc2" target="_blank" class="btn">ResearchGate</a>
+        </div>
       </div>
+      
+      <!-- PROFILE PHOTO (Right Side, Curved Square) -->
+      <img src="profile.png" alt="Dr. Sidharth Punnachalil" class="profile-img" />
     </header>
 
     <!-- PROFESSIONAL SUMMARY -->
